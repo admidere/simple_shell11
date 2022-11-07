@@ -1,0 +1,11 @@
+Getline is the newest and most popular function for reading a string of text (). The getline() function is part of the C library. This function accepts a string from the input stream as an input, so getline() is a better option. The concept of pointers is used by getline(). For reading text, the getline method is the ideal way. The getline method reads a full line from a stream, such as a newline character. To finish the input, use the getline function to generate a stop character. The command will be completed, and this character will be removed from the input. We all have the cin object to take user input; however, the cin object doesn’t allow us to receive user input in many lines; therefore, we can use the getline() function to take input from the input stream in several lines or a string till a delimiter character is discovered.
+
+The getline function uses the realloc function to automatically increase the memory block as required, ensuring that there is never a space shortage. This is one of the explanations why getline is safe.
+
+RETURN
+ The value returned inside the second parameter will also inform us of the new block size. It returns -1 if an error appears, such as reaching the end of a file without receiving any bytes. Getline functions cease reading input from the stream when they meet a newline character or the end of a file.Syntax
+
+The syntax for getline() function
+size_t getline (char **string, size_t *n, FILE *stream);
+size “t” - is an unsigned integral type, it will not return a negative value. It is mostly used for indexing and calculating objects in an array. This argument indicates the size of the memory block referred to by the first parameter in bytes
+
